@@ -34,6 +34,17 @@
     使用裁剪方式创建元素的可显示区域。区域内的部分显示，区域外的隐藏。
     ellipse(0% 0% at 0% 50%)
     定义一个椭圆（使用两个半径和一个圆心位置）。
+        示例：
+            .main-structure .content video{
+                object-fit: cover;
+                clip-path: ellipse(0% 0% at 0% 50%);
+                padding: 0;
+                margin: 0;
+            }
+            .main-structure .content video.active{
+                clip-path: ellipse(150% 70% at 0% 50%);
+            }
+
 11、animation: menu_logo ease-in 1s infinite;
 
 12、overflow: hidden;
